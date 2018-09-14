@@ -36,12 +36,12 @@ public class Controller{
         this.datasource= controllerTools.getDatasource();
         this.controllerTools=controllerTools;
         switch (controllerTools.getDatasource()){
-            case "File":
+            /*case "File":
                 this.service = controllerTools.getApplicationContext().getBean(ServiceFile.class);
                 break;
             case "Gemfire":
                 this.service = controllerTools.getApplicationContext().getBean(ServiceGemfire.class);
-                break;
+                break;*/
             case "Mysql":
                 this.service = controllerTools.getApplicationContext().getBean(ServiceMysql.class);
                 break;
